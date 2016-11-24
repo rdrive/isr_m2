@@ -3,11 +3,9 @@
         <param name="port" value="/dev/ttyACM0" />
         <param name="baud" value="57600" />
     </node>
-    <node pkg="isr_m2_driver" type="isr_m2_driver_node" name="isr_m2_driver_node">
+    <node pkg="isr_m2_driver" type="isr_m2_driver_node" name="isr_m2_driver_node" output="screen">
     </node>
-    <!--<node pkg="isr_m2_controllers" type="isr_m2_manual_controller_node" name="isr_m2_manual_controller_node">
-    </node> -->
-    <node pkg="isr_m2_controllers" type="manual_controller_node.py" name="isr_m2_manual_controller_node">
+    <node pkg="isr_m2_controllers" type="manual_controller_node.py" name="isr_m2_manual_controller_node" output="screen">
     </node>
     <node pkg="keyboard" type="keyboard" name="keyboard_node">
         <param name="allow_repeat" value="false" />
