@@ -58,4 +58,5 @@
         <remap from="robot_description" to="zed_description" />
         </node>
     </group>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="zed_tf_broadcaster" args="1 0 0 0 0 0 1 isr_m2 zed" />
 </launch>
