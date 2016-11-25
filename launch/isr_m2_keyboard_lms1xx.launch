@@ -16,4 +16,5 @@
         <param name="host" value="192.168.1.211" />
         <param name="frame_id" value="lrf" />
     </node>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="lrf_tf_broadcaster" args="1 0 0 0 0 0 1 isr_m2 lrf" />
 </launch>
